@@ -1,0 +1,35 @@
+html {
+  line-height: 1.5;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 65%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+* {
+  font-size: 1em;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  word-spacing: 0.16em;
+  font-family: inherit;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+}
