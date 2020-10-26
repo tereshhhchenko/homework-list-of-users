@@ -13,11 +13,14 @@
     </FilterForm>
 
     <div class="list-wrapper">
-      <ul class="list" aria-busy="isLoading">
+      <ul v-if="listData.length" class="list" aria-busy="isLoading">
         <li v-for="item in listData" :key="item.key">
           <nuxt-link :to="item.linkTo">{{ item.linkText }}</nuxt-link>
         </li>
       </ul>
+      <strong v-if="!listData.length" class="no-content">
+        Sorry, couldn't find anything. Try to change your search query.
+      </strong>
       <LoadingIndicator v-if="isLoading" aria-hidden="true" />
     </div>
   </CardLayout>
@@ -85,5 +88,9 @@ export default {
       outline: 3px solid $c-accent;
     }
   }
+}
+.no-content {
+  display: block;
+  padding: $s-m $s-l;
 }
 </style>
