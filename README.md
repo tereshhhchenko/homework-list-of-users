@@ -1,20 +1,9 @@
-# homework
+# Homework
 
-## Build Setup
+## Demo
 
-```bash
-# install dependencies
-$ yarn install
+The result is deployed on Netlify as a [Single Page Application](https://kind-dijkstra-1e4c0b.netlify.app/users/list)
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+To run it locally see [Build Setup Instructions](docs/Setup.md)
 
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Read about [decisions made](docs/About.md) during the development process
